@@ -4,7 +4,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <router-link to="/">
+      <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    </router-link>
     <div class="wrapper">
       <HelloWorld msg="This is my vue project set-up!" />
     </div>
@@ -18,7 +20,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
