@@ -1,12 +1,13 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <router-link to="/">
+    <RouterLink to="/">
       <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    </router-link>
+    </RouterLink>
     <div class="wrapper">
       <HelloWorld msg="This is my vue project set-up!" />
     </div>
@@ -26,7 +27,6 @@ header {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    /* place-items: center; */
     justify-content: center;
     align-items: center;
   }

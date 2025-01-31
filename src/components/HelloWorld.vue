@@ -6,11 +6,12 @@ defineProps<{
 
 <template>
   <div class="greetings">
-    <a href="https://www.google.com">GO TO WEATHER APP</a>
+    <RouterLink to="/weather">GO TO WEATHER PAGE</RouterLink>
+    <a href="https://www.google.com">VIEW WEATHER</a>
     <h1 class="green">{{ msg }}</h1>
     <h3>
       I&apos;ve successfully created a project with
-      <mark rel="noopener">Vite</mark> and <mark rel="noopener">Vue 3</mark>.
+      <mark rel="noopener">Vite</mark> and <mark rel="noopener">Vue</mark>.
     </h3>
   </div>
 </template>
