@@ -10,6 +10,7 @@
       <slot></slot>
     </div>
   </div>
+  <h1>Hello world </h1>
 </template>
 
 <style scoped>
