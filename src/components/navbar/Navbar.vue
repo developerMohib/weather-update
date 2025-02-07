@@ -1,37 +1,25 @@
-<script lang="ts">
+ <script lang="ts">
 export default {
   name: "NavbarWeather",
 };
 </script>
 
+
 <template>
   <nav>
-    <ul>
-      <li><RouterLink to="/weather">Weather View</RouterLink></li>
-    </ul>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/weather">Weather</router-link>
   </nav>
 </template>
 
-
 <style scoped>
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  background-color: #f8f9fa;
+nav {
+  padding: 10px;
+  background: #42b983;
 }
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
+a {
+  color: white;
   text-decoration: none;
-  color: #007bff;
-}
-
-nav ul li a.router-link-active {
-  font-weight: bold;
-  text-decoration: underline;
+  margin: 0 10px;
 }
 </style>

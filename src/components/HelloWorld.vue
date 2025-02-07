@@ -7,7 +7,7 @@ defineProps<{
 <template>
   <div class="greetings">
     <RouterLink to="/weather">GO TO WEATHER PAGE</RouterLink>
-    <a href="https://www.google.com">VIEW WEATHER</a>
+    <a target="_blank" href="https://www.google.com/search?q=todays+weather&oq=todays+we&gs_lcrp=EgZjaHJvbWUqEggBEAAYRhiAAhixAxjJAxiABDIGCAAQRRg5MhIIARAAGEYYgAIYsQMYyQMYgAQyCggCEAAYkgMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyCQgFEAAYChiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDczMjZqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8&dlnr=1&ved=2ahUKEwjpkfi577GLAxUkUGcHHRHaN0cQl6ENegQIDRAE">VIEW WEATHER</a>
     <h1 class="green">{{ msg }}</h1>
     <h3>
       I&apos;ve successfully created a project with

@@ -1,38 +1,9 @@
-<script setup lang="ts">
-import { RouterLink } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <RouterLink to="/">
-      <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    </RouterLink>
-    <div class="wrapper">
-      <HelloWorld msg="This is my vue project set-up!" />
-    </div>
-  </header>
+  <Navbar />
+  <router-view />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup lang="ts">
+import Navbar from './components/navbar/Navbar.vue';
 
-.logo {
-  display: block;
-  margin: 0 auto;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
-</style>
+</script>

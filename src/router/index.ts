@@ -1,21 +1,19 @@
-import App from '@/App.vue';
-import MainLayout from '@/pages/layout/MainLayout.vue';
+
+import Home from '@/pages/home/Home.vue';
+import NotFound from '@/pages/NotFound/NotFound.vue';
 import Weather from '@/pages/weather/weather.vue'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
-  {
-    path: "/",
-    component: MainLayout, // Parent layout
-    children: [
-      { path: "", name: "Home", component: App },
-      { path: '/weather', name: 'WeatherUpdate', component: Weather },
-    ],
-  },
+  { path: '/', component: Home },
+  { path: '/weather', component: Weather },
+  // Catch-all route for 404 pages
+  { path: '/:pathMatch(.*)*', component: NotFound }
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
-  routes,
-})
-export default router
+  history: createWebHistory(),
+  routes
+});
+
+export default router;
