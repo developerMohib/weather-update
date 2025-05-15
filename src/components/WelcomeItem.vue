@@ -1,16 +1,14 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+  <h1>Hello world</h1>
+  <div>
+    <p>make a skill bar</p>
+    <div class="skillCard">
+      <p>HTML</p>
+      <p>HTML</p>
+      <p>HTML</p>
+      <p>HTML</p>
     </div>
   </div>
-  <h1>Hello world </h1>
 </template>
 
 <style scoped>
@@ -25,14 +23,11 @@
   margin-left: 1rem;
 }
 
-i {
-  display: flex;
+.skillCard {
+  display: grid;
+  grid-template: 100px 1fr / 50px 1fr;
   place-items: center;
-  place-content: center;
-  width: 32px;
   height: 32px;
-
-  color: var(--color-text);
 }
 
 h3 {

@@ -18,15 +18,26 @@ export default {
 
 <template>
   <div v-on:click="countClicks">
-    <h2>{{ name }}</h2>
-    <p>{{ message }}</p>
-    <p id="red">You have clicked me {{ clicks }} times.</p>
+    <button class="appleClick">{{ name }}</button>
+  </div>
+  <p>{{ message }}</p>
+  <p id="red">You have clicked me {{ clicks }} times.</p>
+
+  <div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatum ipsa est, qui fuga
+      animi eius aliquam rerum corporis, facilis eligendi exercitationem beatae dolorem eum expedita
+      atque culpa sint voluptatibus deserunt blanditiis quia quibusdam.
+    </p>
   </div>
 </template>
 
-<style>
+<style scoped>
 #red {
   font-weight: bold;
   color: rgb(144, 12, 12);
+}
+.appleClick {
+  padding: 20px;
 }
 </style>
